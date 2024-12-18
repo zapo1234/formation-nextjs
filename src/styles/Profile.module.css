@@ -1,0 +1,86 @@
+/* styles/Profile.module.css */
+
+/* Wrapper pour le contenu de la page */
+.menuWrapper {
+    display: flex;
+    flex-direction: row;  /* L'ordre normal pour les grands écrans */
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  /* Contenu principal */
+  .pageContent {
+    
+    margin: 0 auto;
+    text-align: center;  /* Centrer le texte */
+    flex-grow: 1;
+  }
+
+  /* Espacement entre l'icône de chevron et le texte */
+.fas {
+  margin-left: 10px; /* Espacement entre l'icône et le texte */
+}
+  
+  .pageContent h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  
+  .pageContent p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .pageContent .profileInfo {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  /* Responsiveness pour les écrans moyens (tablettes, petits écrans) */
+  @media (max-width: 768px) {
+    .menuWrapper {
+      flex-direction: column;  /* Pour empiler Menu et Contenu sur les petits écrans */
+    }
+  
+    .pageContent {
+      padding: 10px;  /* Réduire le padding sur les petits écrans */
+      text-align: center;  /* Centrer le texte */
+    }
+  
+    .pageContent h1 {
+      font-size: 1.5rem;
+    }
+  
+    .pageContent p {
+      font-size: 1rem;
+    }
+  
+    .pageContent .profileInfo {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Responsiveness pour les très petits écrans (mobiles) */
+  @media (max-width: 480px) {
+    .pageContent {
+      padding: 5px;  /* Réduit encore le padding */
+      
+    }
+  
+    .pageContent h1 {
+      font-size: 1.25rem;  /* Plus petit sur mobile */
+    }
+  
+    .pageContent p {
+      font-size: 0.9rem;
+    }
+  
+    .pageContent .profileInfo {
+      font-size: 0.8rem;
+    }
+  }
+  

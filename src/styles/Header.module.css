@@ -1,0 +1,38 @@
+/* styles/Header.module.css */
+
+/* Styles pour le conteneur principal du header */
+.header {
+  padding: 10px;
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content:end;
+  width: 100%;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espacement entre h1 et le lien "Se connecter" */
+}
+
+.logo h1 {
+  margin-right: 10px; /* Optionnel : pour espacer h1 de h2 (ou du lien) */
+}
+
+/* Style du lien "Se connecter" */
+.loginLink {
+  text-decoration: none;
+  color:black; /* Bleu pour le lien */
+  font-size:1rem;
+}
+
+.loginLink:hover {
+  text-decoration: underline; /* Souligner le lien au survol */
+}

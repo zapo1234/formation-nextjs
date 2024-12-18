@@ -1,0 +1,38 @@
+/* src/components/styles/Footer.module.css */
+.footer {
+    position: fixed;       /* Fixe le footer au bas de l'écran */
+    bottom: 0;             /* Positionne le footer en bas */
+    left: 0;               /* Aligne à gauche */
+    width: 100%;           /* Occupe toute la largeur */
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 10;           /* Assure que le footer est au-dessus des autres éléments */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .footerLink {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size:0.9rem;
+  }
+  
+  .footerLink:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,132 @@
+/* Menu.module.css */
+
+/* Style global pour le menu */
+.menu {
+    display: none;  /* Masque le menu par défaut sur les petits écrans */
+    position: fixed; /* Le menu se fixe sur l'écran */
+    top: 0;
+    left: 0;
+    width: 250px; 
+    height: 100vh; 
+    background-color:white; 
+    color: white;
+    padding-top: 20px;
+    border: 3px solid white; /* Bordure de 3px, couleur sombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1); /* Box-shadow dégradé */
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; 
+  }
+
+  .menuItem:hover {
+    width: 100%; /* Expand to 100% width on hover */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional background color on hover */
+  }
+  
+
+  /* Afficher le menu sur les grands écrans */
+  @media (min-width: 768px) {
+    .menu {
+      display: block; /* Affiche le menu sur les tablettes et ordinateurs */
+    }
+  }
+  
+  /* Menu visible uniquement sur mobile */
+  @media (max-width: 767px) {
+    .menu.showMenu {
+      display: block;  /* Affiche le menu hamburger quand l'état est actif */
+      transform: translateX(0); /* Fait glisser le menu depuis la gauche */
+    }
+  }
+  
+  /* Style pour le bouton de toggle (hamburger) sur mobile */
+  .menuToggle {
+    display: block; /* Affiche le bouton de menu sur mobile */
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Liste du menu */
+  .menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuItem {
+    display: block;
+    padding: 15px;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    
+  }
+  
+  .menuItem:hover {
+    background-color: #575757;
+  }
+
+  .rotated {
+    transform: rotate(180deg);
+    justify-content:end;
+  }
+  
+  
+  /* Pour le contenu, lorsque le menu est affiché, il doit se déplacer */
+  .showMenu {
+    transform: translateX(0); /* Le menu glisse depuis la gauche sur mobile */
+  }
+
+  /* Menu.module.css */
+
+/* Espacement entre l'icône et le texte du menu */
+.menuItem i {
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+
+/* Menu principal item */
+.menuList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Menu item avec un peu d'espace vertical */
+.menuItem {
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px; /* Ajoute de l'espace entre les éléments de menu */
+}
+
+/* Sous-menu avec un léger décalage à gauche */
+.subMenu {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+/* Sous-menu item */
+.subMenu .menuItem {
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 8px; /* Ajoute de l'espace entre les éléments du sous-menu */
+}
+
+/* Bouton pour menu sur mobile */
+.menuToggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Rotation de l'icône de la flèche pour ouvrir/fermer le sous-menu */
+.rotated {
+  transform: rotate(180deg);
+}
+
+  
